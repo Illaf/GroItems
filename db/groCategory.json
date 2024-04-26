@@ -1,0 +1,17 @@
+[
+    {
+        "CategoryName":"grains"
+    },
+    {
+        "CategoryName":"fluids"
+    }, 
+    {
+        "CategoryName":"households"
+    },
+    {
+        "CategoryName":"veggies"
+    },
+    {
+        "CategoryName":"fruits"
+    }
+]
