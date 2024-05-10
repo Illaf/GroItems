@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 //require("dotenv").config();
 const MongoClient = require('mongodb').MongoClient;
-const PORT = 5000;
+const PORT=5000;
 
 (async () => {
   try {
@@ -55,5 +55,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
