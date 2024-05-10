@@ -1,16 +1,17 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
+//require("dotenv").config();
 const MongoClient = require('mongodb').MongoClient;
 const PORT = 5000;
-const DB =
-  "mongodb+srv://ilafshafeeq:mernProject@cluster0.l7avaxr.mongodb.net/grocer Mern?retryWrites=true&w=majority";
 
 (async () => {
   try {
-    await mongoose.connect(DB, { useNewUrlParser: true });
+    await mongoose.connect(process.env.DATABASE, { useNewUrlParser: true });
     console.log("database connected successfully");
+    
    
    } catch (err) {
     console.log("error" + err);
