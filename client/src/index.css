@@ -1,0 +1,120 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 2.4rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  align-items: center;
+  gap: 0 9.6rem;
+}
+
+.heading-primary {
+  font-size: 3.2rem;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  margin-bottom: 3.6rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  /* line-height: 1.0; */
+  margin-bottom: 2.8rem;
+  font-style: italic;
+}
+.hello{
+  color: black;
+}
+.hero-img-box {
+  grid-column: 2/3;
+  grid-row: 1 / 3;
+}
+.home-heading{
+  font-size: 30px;
+}
+.hero-img {
+  width: 100%;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  /* font-size: 2rem;
+  font-weight: 600; */
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  border-radius: 9px;
+  /* padding: 1.0rem 1.2rem; */
+  text-decoration: none;
+  transition: all .2s;
+}
+.section-gap{
+  padding-top: 50px;
+}
+.btn--fill {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--fill:hover {
+  background-color: #cf711f;
+}
+
+.btn--outline {
+  background-color: #fff;
+  color: #e67e22;
+}
+
+.btn--outline:hover {
+  background-color: #fdf2e9;
+}
+
+.margin-right-btn {
+  margin-right: 1.6rem;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-top: 4.8rem;
+}
+
+.delivered-imgs img {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  margin-right: -.8rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #e67e22;
+}

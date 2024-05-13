@@ -11,7 +11,7 @@ function Footer() {
       <li className="nav-item"><Link to="/" className="nav-link px-2 text-muted">FAQs</Link></li>
       <li className="nav-item"><Link to="/" className="nav-link px-2 text-muted">About</Link></li>
     </ul>
-    <p className="text-center text-muted">© 2021 Company, Inc</p>
+    <p className="text-center text-muted">© Made in 2023</p>
   </footer>
     </div>
   )

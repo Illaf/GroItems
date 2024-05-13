@@ -7,7 +7,7 @@ function Login() {
 
     const handleSubmit= async(e)=>{
       e.preventDefault();
-      const response=await fetch("http://localhost:5000/api/loginUser",{
+      const response=await fetch("https://groitems.onrender.com/api/loginUser",{
         method:"POST",
         headers:{
             'Content-Type':'application/json'
@@ -32,9 +32,9 @@ function Login() {
     }
   
   return (
-    <div>
+    <div >
       <div><Navbar/></div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='section-gap'>
       <div className="form-group">
     <label htmlFor="email">Email</label>
     <input type="text" className="form-control"  placeholder="Enter email" name='email' value={values.email}  onChange={setChange}/>

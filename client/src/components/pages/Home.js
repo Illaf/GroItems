@@ -15,7 +15,7 @@ function Home() {
     setSelectedOption(event.target.value);
   };
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/api/groceryData", {
+    let response = await fetch("https://groitems.onrender.com/api/groceryData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -60,7 +60,7 @@ function Home() {
           groCategory.map((data) => {
             return (
               <div className="row mb-3">
-                <div key={data._id}>{data.CategoryName}</div>
+                <div key={data._id} className="home-heading">{data.CategoryName}</div>
                 <hr />
                 {groItem !== [] ? (
                   groItem
