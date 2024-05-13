@@ -38,32 +38,15 @@ const PORT=5000;
 //   }
 // }
 // fetchData();
-// app.use((req,res,next)=>{
-//   res.setHeader("Access-Control-Allow-Origin","https://inquisitive-donut-2dc16f.netlify.app");
-//   res.header(
-//     "Access-Control-Allow-Headers",
-//     "Origin, X-Requested-With, Content-Type, Accept"
-//   );
-//   next();
-// })
-const allowedOrigins = [
-  'http://localhost:3000',
-  'https://inquisitive-donut-2dc16f.netlify.app'
-];
+app.use((req,res,next)=>{
+  res.setHeader("Access-Control-Allow-Origin","https://inquisitive-donut-2dc16f.netlify.app");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+})
 
-const corsOptions = {
-  origin: function (origin, callback) {
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-          callback(null, true);
-      } else {
-          callback(new Error('Not allowed by CORS'));
-      }
-  },
-  credentials: true, // You might need this depending on your use case
-  optionsSuccessStatus: 200
-};
-
-app.use(cors(corsOptions));
 app.use(express.json());
 app.use("/api",require("./routes/CreateUser"));
 app.use("/api",require("./routes/DisplayData"));
